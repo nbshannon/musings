@@ -7,8 +7,22 @@ Optional filters include additional human reference genomes (for those used see 
 Initial microbial alignment is performed against a database of bacterial, viral and fungal genomes obtained from the NCBI database using blastn (n=695285 sequences). At the same time a final human alignment is performed against RNA sequence data from NCBI also using blastn. Reads aligning to microbial sequence, but not human sequence are summarised.
 To increase specificity contigs are assembled from reads xxx using velvet and realigned to microbial and human sequence in a repeat of the blastn step.
 
-![Fig x](figx.png?raw=true "Microbial sequence alignment pipeline (MusiNGS)")
+![Fig x](figures/figx.png?raw=true "Microbial sequence alignment pipeline (MusiNGS)")
 Fig x, Microbial sequence alignment pipeline (MusiNGS)
+
+## Demonstration
+
+### Tumour vs normal (expect to be moderately different)
+![Fig x](figures/tumour_vs_normal.png?raw=true "Tumour vs normal")
+
+### Tumour vs tumour (from different patient - expect to be very different)
+![Fig x](figures/tumour_vs_tumour.png?raw=true "Tumour vs same")
+
+### Tumour vs tumour (two sample from same patient - expect to be the same)
+![Fig x](figures/tumour_vs_tumour.png?raw=true "Tumour vs tumour")
+
+### Tumour pre and post chemotherapy
+![Fig x](figures/tumour_vs_chemo.png?raw=true "Tumour vs chemo")
 
 ## Supplementary info
 ### Supplementary x Human databases used in MusiNGS
